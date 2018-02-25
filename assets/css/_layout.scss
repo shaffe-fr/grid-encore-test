@@ -3,10 +3,12 @@
   $logo-height: 250px;
   $footer-height: 20px;
   display: grid;
+  min-height: 100vh;
   grid-template: "head main" $logo-height
                  //"nav main" min-content
-                 "nav main" minmax(min-content, calc(100vh - #{$logo-height} - #{$footer-height}))
-                 "nav footer" $footer-height
+                 //"nav main" minmax(min-content, calc(100vh - #{$logo-height} - #{$footer-height}))
+                 "nav main" 1fr
+                 "nav footer" #{$footer-height}
                  / 240px 1fr;
   margin: 0;
   padding: 0;
