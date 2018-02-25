@@ -1,0 +1,14 @@
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: $spacing-sm;
+  margin: $spacing-sm;
+}
+
+@media (max-width: 720px) {
+  .cover-grid {
+    grid-gap: $spacing-xs;
+    margin: $spacing-xs;
+  }
+}
